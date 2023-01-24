@@ -13,6 +13,7 @@ import com.mycompany.projectoclinica.views.ClinicFrame;
 public class Projectoclinica {
 
     public static void main(String[] args) {
-      
+      var frame = new ClinicFrame();
+      frame.setVisible(true);
     }
 }
