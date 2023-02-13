@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.clinic;
-import com.mycompany.clinic.views.ClinicFrame;
+
+import com.mycompany.clinic.views.MainContainer;
 
 /**
  *
@@ -13,7 +14,7 @@ public class ClinicProject {
 
     public static void main(String[] args) {
 
-      var frame = new ClinicFrame();
-      frame.setVisible(true);
+        new MainContainer().show();
+
     }
 }

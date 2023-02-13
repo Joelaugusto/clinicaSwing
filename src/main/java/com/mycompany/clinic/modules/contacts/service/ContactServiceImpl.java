@@ -23,12 +23,16 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public Contact create(ContactRequest request) {
+
         var contact = ContactMapper.CONTACT_MAPPER.toContact(request);
         manager.getTransaction().begin();
         manager.persist(contact);
         manager.getTransaction().commit();
         return contact;
     }
+
+
+
 
     @Override
     public Contact update(Long id, ContactRequest request) {
